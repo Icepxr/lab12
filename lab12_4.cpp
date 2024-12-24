@@ -3,7 +3,7 @@
 using namespace std;
 
 template<typename T>
-T mySwap(T&,T&);
+void mySwap(T&,T&);
 
 int main(){
 	int x, y;
@@ -36,10 +36,12 @@ int main(){
 }
 
 template<typename T>
-T mySwap(T &a,T &b){
+void mySwap(T &a,T &b){
 	
 	T z;
 	z = a;
 	a =b ;
 	b = z;
+
+    
 }
